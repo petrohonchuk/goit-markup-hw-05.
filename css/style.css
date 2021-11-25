@@ -661,12 +661,12 @@ button {
   transform: translatey(0);
 }
 
-.overlay h2 {
+.overlay .overlay-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: auto 24px;
