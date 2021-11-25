@@ -15,6 +15,7 @@ html {
   --color-hero-end-footer: #2f303a;
   --bg-hover-button: #188ce8;
   --team-icon-color: #afb1b8;
+  --overlay-bg: rgba(33, 150, 243, 0.9);
 }
 body {
   background-color: var(--primary-white-color);
@@ -25,9 +26,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-/* img {
-  padding-bottom: 0;
-} */
 
 ul {
   list-style: none;
@@ -462,11 +460,7 @@ button {
   border-color: var(--bg-hover-button);
   fill: var(--bg-hover-button);
 }
-/* .client-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .client-svg {
   width: 106px;
   height: 60px;
@@ -646,14 +640,8 @@ button {
   overflow: hidden;
 }
 .overlay {
-  background: rgba(33, 150, 243, 0.9);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  background: var(--overlay-bg);
+
   display: flex;
   align-items: center;
   position: absolute;
@@ -664,14 +652,24 @@ button {
   transition: transform 250ms ease;
 }
 .portfolio-link {
+  display: inline-block;
   text-decoration: none;
+  width: 100%;
+  padding-bottom: 20px;
 }
 .portfolio-link:hover .overlay {
   transform: translatey(0);
 }
 
-.overlay span {
-  margin-left: 24px;
+.overlay h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: auto 24px;
 }
 
 .list .item a img {
@@ -695,6 +693,5 @@ button {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 4px;
-  margin-bottom: 20px;
   margin-left: 24px;
 }
