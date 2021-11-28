@@ -104,7 +104,6 @@ button {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .header-nav-list li:last-child .link {
@@ -170,30 +169,31 @@ button {
   height: 12px;
 }
 
-/* .client-link:focus .client-svg,
-.client-link:hover .client-svg {
+/* .mail:focus svg.icon-phone,
+.tell:hover svg.icon-phone {
+  fill: var(--bg-hover-button);
+}
+.mail:focus svg.icon-convert,
+.tell:hover svg.icon-convert {
   fill: var(--bg-hover-button);
 } */
-
-.mail:focus .icon-phone,
-.tell:hover .icon-phone {
-  fill: var(--accent-color);
+.mail .icon-phone:focus,
+.mail .icon-convert:focus,
+.contacts .tell:focus,
+.contacts .mail:focus {
+  fill: var(--bg-hover-button);
 }
-.mail:focus .icon-convert,
-.tell:hover .icon-convert {
-  fill: var(--accent-color);
-}
-/* .mail .icon-phone:hover,
+.mail .icon-phone:hover,
 .mail .icon-convert:hover,
 .contacts .tell:hover,
 .contacts .mail:hover {
-  fill: var(--accent-color);
-} */
+  fill: var(--bg-hover-button);
+}
 .contacts .tell:focus,
 .contacts .mail:focus,
 .contacts .tell:hover,
 .contacts .mail:hover {
-  color: var(--accent-color);
+  color: var(--bg-hover-button);
 }
 
 /*----------------------------main-------------------------------*/
