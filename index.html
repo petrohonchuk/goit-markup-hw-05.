@@ -45,7 +45,7 @@
         <!--hero-section-->
         <section class="hero-section">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button"> <span class="span-button">Заказать услугу</span></button>
+            <button type="button" class="hero-button" data-modal-open> <span class="span-button">Заказать услугу</span></button>
         </section>    
         <!--нашы качества -->
         <section class="section">  
@@ -414,8 +414,13 @@
                 </li>
         
             </ul>
-        </div>
-        
+        </div>        
     </footer>
+    <div class="wrapper-modal is-hidden" data-modal>
+        <form action="" class="form">
+            <button type="button" class="close-button" data-modal-close> &#10006;</button>
+        </form>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
