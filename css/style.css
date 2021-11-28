@@ -436,7 +436,7 @@ button {
 }
 .team-icon-link:focus,
 .team-icon-link:hover {
-  background-color: var(--accent-color);
+  background-color: var(--bg-hover-button);
   fill: var(--primary-white-color);
   color: var(--primary-white-color);
 }
@@ -581,10 +581,17 @@ button {
 .team-icon-link.footer-link-bg {
   background: rgba(255, 255, 255, 0.1);
 }
+.team-icon-link.footer-link-bg:focus,
 .team-icon-link.footer-link-bg:hover {
   background-color: var(--accent-color);
+  background-color: var(--bg-hover-button);
+  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
-
+.team-icon-link.footer-link-bg:focus .team-icon-svg,
+.team-icon-link.footer-link-bg:hover .team-icon-svg {
+  fill: var(--primary-white-color);
+}
 /*-------------------------------------------------portfolio--------------------------*/
 
 /*main*/
