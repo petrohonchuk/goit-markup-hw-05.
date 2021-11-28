@@ -749,7 +749,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+
+  transition-property: transform, opasity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
+
 .form {
   height: 581px;
   width: 528px;
@@ -765,6 +771,7 @@ button {
   width: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -776,4 +783,5 @@ button {
   visibility: collapse;
   opacity: 0;
   pointer-events: none;
+  transform: scale(-1);
 }
