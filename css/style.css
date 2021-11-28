@@ -170,12 +170,17 @@ button {
   height: 12px;
 }
 
-.contacts li .mail:focus .icon-phone,
-.contacts li .tell:hover .icon-phone {
+/* .client-link:focus .client-svg,
+.client-link:hover .client-svg {
+  fill: var(--bg-hover-button);
+} */
+
+.mail:focus .icon-phone,
+.tell:hover .icon-phone {
   fill: var(--accent-color);
 }
-.contacts li .mail:focus .icon-convert,
-.contacts li .tell:hover .icon-convert {
+.mail:focus .icon-convert,
+.tell:hover .icon-convert {
   fill: var(--accent-color);
 }
 /* .mail .icon-phone:hover,
